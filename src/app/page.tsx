@@ -117,10 +117,11 @@ const experience = [
       "Supported multiple client projects as an additional development resource, helping reduce team workload and keep project deliverables on schedule.",
     ],
     projects: [
-      "Breeze: Frontend development and API integration for a student engagement platform used for extracurricular tracking, event management, attendance, and soft skills development.",
+      "Breeze: Frontend development and API integration for a student engagement platform used for extracurricular tracking, event management, attendance, and soft skills development. breeze.school",
       "Quantem SOF and Odfjell SOF: Frontend work and API integration for Statement of Facts systems used to digitize vessel cargo terminal operations and documentation.",
       "Odfjell Customer Portal: Built frontend features and integrated APIs for a customer-facing web app that lets customers monitor stock levels, track product movements, manage orders, view shipments, and see throughput analytics.",
       "Banter App: Real-time chat application; built backend features using MQTT and SignalR.",
+      "Inevitably Homegrown: Shopify e-commerce website development and setup. inevitablyhomegrown.com",
     ],
   },
   {
@@ -134,6 +135,7 @@ const experience = [
       "Created an internal app to make CRM and SharePoint data easier to access and modify.",
       "Built a SharePoint-embeddable interface for viewing extracted economic data.",
       "Implemented Azure MSAL authentication for secure Microsoft account login.",
+      "Worked on SelectStart, a gaming/e-sports related website: selectstart.gg.",
     ],
   },
   {
@@ -215,14 +217,20 @@ const experience = [
   },
 ];
 
-const projects: { name: string; icon: React.ComponentType<{ className?: string }> }[] = [
-  { name: "Breeze", icon: HiOutlineAcademicCap },
+const projects: {
+  name: string;
+  icon: React.ComponentType<{ className?: string }>;
+  url?: string;
+}[] = [
+  { name: "Breeze", icon: HiOutlineAcademicCap, url: "https://breeze.school/" },
   { name: "Quantem SOF & Odfjell SOF", icon: HiOutlineTruck },
   { name: "Odfjell Customer Portal", icon: HiOutlineChartBar },
   { name: "Banter App", icon: HiOutlineChatBubbleLeftRight },
   { name: "Trading Economics + Dynamics CRM Integration", icon: HiOutlineDocumentText },
-  { name: "MindNation Web App", icon: HiOutlineGlobeAlt },
+  { name: "SelectStart", icon: HiOutlineGlobeAlt, url: "https://selectstart.gg/" },
+  { name: "MindNation Web App", icon: HiOutlineGlobeAlt, url: "https://mindnation.com/?lang=en" },
   { name: "Duke Connected Equipment Platform", icon: HiOutlineCube },
+  { name: "Inevitably Homegrown", icon: HiOutlineShoppingBag, url: "https://inevitablyhomegrown.com" },
   { name: "Ticketing and Inventory Management System", icon: HiOutlineDocumentText },
   { name: "HRIS and Payroll System", icon: HiOutlineCloud },
 ];
@@ -291,12 +299,13 @@ export default function Home() {
             Software Engineer | Full Stack Developer | Front-End Developer
           </p>
           <h2 className="max-w-4xl text-3xl font-bold leading-tight text-slate-900 dark:text-slate-100 md:text-5xl">
-            Full Stack Developer building reliable web applications, dashboards,
-            customer portals, and API-integrated business systems.
+            Full Stack Developer creating practical software solutions that help
+            businesses manage operations, data, customers, and internal workflows.
           </h2>
           <p className="mt-5 max-w-3xl text-slate-600 dark:text-slate-300 md:text-lg">
             9+ years of experience across frontend development, backend services,
-            CMS/e-commerce solutions, internal tools, and remote software delivery.
+            CMS/e-commerce solutions, internal tools, API integration, and remote
+            team collaboration.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a
@@ -407,8 +416,11 @@ export default function Home() {
           <SectionTitle title="Featured Project Portfolio" subtitle="Selected projects delivered across logistics, education, healthcare, and business systems." />
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {projects.map((project, idx) => (
-              <motion.div
+              <motion.a
                 key={project.name}
+                href={project.url ?? "#projects"}
+                target={project.url ? "_blank" : undefined}
+                rel={project.url ? "noreferrer" : undefined}
                 initial={{ opacity: 0, y: 14 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.2 }}
@@ -419,7 +431,12 @@ export default function Home() {
                   <project.icon className="text-xl text-sky-600 dark:text-sky-400" />
                   <span>{project.name}</span>
                 </div>
-              </motion.div>
+                {project.url ? (
+                  <span className="mt-2 block text-xs text-sky-600 dark:text-sky-400">
+                    View live site
+                  </span>
+                ) : null}
+              </motion.a>
             ))}
           </div>
         </section>
