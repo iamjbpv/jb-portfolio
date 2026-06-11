@@ -30,10 +30,52 @@ Live site: [https://jbvillamayor.netlify.app/](https://jbvillamayor.netlify.app/
 - Odfjell Customer Portal
 - Banter App
 - Trading Economics and Dynamics CRM integration
+- John Foord Customer Portal
 - SelectStart
+- Doventry WordPress Website
 - MindNation Web App
 - Duke Connected Equipment Platform
 - Inevitably Homegrown
+
+## Common Commands
+
+Run these commands from the `portfolio` folder.
+
+Start local development:
+
+```bash
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+Refresh the downloadable resume in the website after regenerating the main resume PDF:
+
+```powershell
+Copy-Item -LiteralPath "..\Jan-Brian-Villamayor-Resume-ATS.pdf" -Destination ".\public\Jan-Brian-Villamayor-Resume-ATS.pdf" -Force
+```
+
+## Resume Regeneration Notes
+
+The resume source file is:
+
+```text
+..\Jan-Brian-Villamayor-Resume-ATS.html
+```
+
+The generated resume files are:
+
+```text
+..\Jan-Brian-Villamayor-Resume-ATS.pdf
+..\Jan-Brian-Villamayor-Resume.pdf
+..\Jan-Brian-Villamayor-Resume-ATS.docx
+```
+
+After updating the resume HTML, regenerate both PDFs and the DOCX, then copy the latest ATS PDF into `public/` so the portfolio download stays updated.
 
 ## Getting Started
 

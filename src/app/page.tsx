@@ -137,7 +137,7 @@ const experience = [
       "Implemented Azure MSAL authentication for secure Microsoft account login.",
       "Built the John Foord Customer Portal from the ground up, including authentication, Dynamics 365 CRM integration, CRM data sync, scheduled cron jobs, and Google Maps integration for location pinpointing.",
       "Worked on SelectStart, a gaming/e-sports related website: selectstart.gg.",
-      "Worked on Doventry, a web-based platform: doventry.com.",
+      "Worked on Doventry, a WordPress website: doventry.com.",
     ],
   },
   {
