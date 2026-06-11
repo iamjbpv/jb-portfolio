@@ -233,6 +233,7 @@ const projects: {
   { name: "SelectStart", icon: HiOutlineGlobeAlt, url: "https://selectstart.gg/" },
   { name: "Doventry", icon: HiOutlineGlobeAlt, url: "https://doventry.com/" },
   { name: "MindNation Web App", icon: HiOutlineGlobeAlt, url: "https://mindnation.com/?lang=en" },
+  { name: "Monique Ong Website", icon: SiWordpress, url: "https://moniqueong.com/" },
   { name: "Duke Connected Equipment Platform", icon: HiOutlineCube },
   { name: "Inevitably Homegrown", icon: HiOutlineShoppingBag, url: "https://inevitablyhomegrown.com" },
   { name: "Ticketing and Inventory Management System", icon: HiOutlineDocumentText },

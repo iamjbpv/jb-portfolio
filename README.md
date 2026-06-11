@@ -34,6 +34,7 @@ Live site: [https://jbvillamayor.netlify.app/](https://jbvillamayor.netlify.app/
 - SelectStart
 - Doventry WordPress Website
 - MindNation Web App
+- Monique Ong Website
 - Duke Connected Equipment Platform
 - Inevitably Homegrown
 
