@@ -106,12 +106,35 @@ const skillGroups: { title: string; skills: Skill[] }[] = [
 
 const experience = [
   {
+    company: "Johnfoord",
+    role: "Azure Application Developer",
+    period: "January 2025 - Present",
+    icon: FaLaptopCode,
+    bullets: [
+      "Developed tools to extract and display Trading Economics data, including CPI and PPI data.",
+      "Built integrations between Microsoft Dynamics 365 CRM and SharePoint Lists using internal APIs.",
+      "Created an internal app to make CRM and SharePoint data easier to access and modify.",
+      "Built a SharePoint-embeddable interface for viewing extracted economic data.",
+      "Implemented Azure MSAL authentication for secure Microsoft account login.",
+      "Built the John Foord Customer Portal from the ground up, including authentication, Dynamics 365 CRM integration, CRM data sync, scheduled cron jobs, and Google Maps integration for location pinpointing.",
+    ],
+  },
+  {
+    company: "Selectstart.gg",
+    role: "Freelance FullStack Developer",
+    period: "Freelance",
+    icon: HiOutlineGlobeAlt,
+    bullets: [
+      "Worked on SelectStart, a gaming/e-sports related website: selectstart.gg.",
+    ],
+  },
+  {
     company: "QADWorks",
     role: "Full Stack Developer",
-    period: "March 2022 - Present",
+    period: "March 2022 - January 2025",
     icon: FaBuilding,
     bullets: [
-      "Built responsive, API-connected frontend features for Odfjell and Quantem projects from business requirements and design specifications.",
+      "Built responsive, API-connected frontend features for Odfjell and Quantem vessel cargo operations, supporting cargo activity tracking, terminal workflows, and logistics documentation from business requirements and design specifications.",
       "Worked with designers and backend developers to connect user interfaces with APIs and databases.",
       "Developed and launched Shopify and WordPress projects, including e-commerce features and client websites.",
       "Supported multiple client projects as an additional development resource, helping reduce team workload and keep project deliverables on schedule.",
@@ -122,22 +145,7 @@ const experience = [
       "Odfjell Customer Portal: Built frontend features and integrated APIs for a customer-facing web app that lets customers monitor stock levels, track product movements, manage orders, view shipments, and see throughput analytics.",
       "Banter App: Real-time chat application; built backend features using MQTT and SignalR.",
       "Inevitably Homegrown: Shopify e-commerce website development and setup. inevitablyhomegrown.com",
-    ],
-  },
-  {
-    company: "Freelance Software Developer",
-    role: "Freelance",
-    period: "2025 - Present",
-    icon: FaLaptopCode,
-    bullets: [
-      "Developed tools to extract and display Trading Economics data, including CPI and PPI data.",
-      "Built integrations between Microsoft Dynamics 365 CRM and SharePoint Lists using internal APIs.",
-      "Created an internal app to make CRM and SharePoint data easier to access and modify.",
-      "Built a SharePoint-embeddable interface for viewing extracted economic data.",
-      "Implemented Azure MSAL authentication for secure Microsoft account login.",
-      "Built the John Foord Customer Portal from the ground up, including authentication, Dynamics 365 CRM integration, CRM data sync, scheduled cron jobs, and Google Maps integration for location pinpointing.",
-      "Worked on SelectStart, a gaming/e-sports related website: selectstart.gg.",
-      "Worked on Doventry, a WordPress website: doventry.com.",
+      "Doventry: WordPress website development. doventry.com",
     ],
   },
   {
