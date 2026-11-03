@@ -245,7 +245,7 @@ const projects: {
   { name: "Duke Connected Equipment Platform", icon: HiOutlineCube },
   { name: "Inevitably Homegrown", icon: HiOutlineShoppingBag, url: "https://inevitablyhomegrown.com" },
   { name: "Ticketing and Inventory Management System", icon: HiOutlineDocumentText },
-  { name: "HRIS and Payroll System", icon: HiOutlineCloud },
+  { name: "HRIS and Payroll System", icon: HiOutlineCloud, url: "http://168.110.47.251/" },
 ];
 
 function SectionTitle({ title, subtitle }: { title: string; subtitle?: string }) {
